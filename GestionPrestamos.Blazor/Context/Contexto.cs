@@ -11,6 +11,7 @@ public class Contexto : DbContext
     public virtual DbSet<Prestamos> Prestamos { get; set; }
     public virtual DbSet<Cobros> Cobros { get; set; }
     public virtual DbSet<CobrosDetalle> CobrosDetalle { get; set; }
+    public virtual DbSet<PrestamosDetalle> PrestamoDetalle { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
